@@ -11,7 +11,7 @@ ofstream file;
 ofstream Ch;
 ofstream Set;
 int choose;
-int menu();int error();int test();int check();int add();int del();int help();int main();int set();int organize();//宣告副程式
+int menu();int error();int test();int check();int add();int del();int help();int main();int set();int organize();int add1();//宣告副程式
 int main() {
 	cout<<"=====歡迎使用英文測驗====="<<endl<<"     輸入start 來開始     "<<endl;
 	cin>>start;
@@ -189,6 +189,7 @@ int add(){
 	file.close();Ch.close();
 	cout<<"Continue? Yes or No."<<endl;
 	cin>>ans;
-	if(ans=="Yes"||ans=="yes"||ans=="YES"){add();}
+	if(ans=="Yes"||ans=="yes"||ans=="YES"){add1();}
 	else{menu();}
 }
+int add1(){add();}
