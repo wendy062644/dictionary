@@ -1,0 +1,9 @@
+ant
+apple
+banana
+cat
+door
+happy
+hat
+own
+zoo
